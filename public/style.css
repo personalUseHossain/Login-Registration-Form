@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button,
+a,
+label{
+    cursor: pointer;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 30rem;
+    width: 30rem;
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+form{
+    display: grid;
+    font-size: 17px;
+}
+form label input{
+    padding: 7px;
+    width: 20rem;
+}
+form button{
+    margin-top: 10px;
+    padding: 7px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+form a{
+    text-align: center;
+}
+.otherLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+    align-items: flex-start;
+}
+
