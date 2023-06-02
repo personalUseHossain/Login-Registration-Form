@@ -1,0 +1,31 @@
+<%- include('./header.ejs') %>
+<div class="container">
+  <h1>Login</h1>
+  <form action="/login/new" method="post">
+    <label
+      >Email or Username: <br />
+      <input
+        name="logemail"
+        type="email"
+        required
+        placeholder="Enter Email/Username..."
+      />
+    </label>
+    <br />
+    <label
+      >Password: <br />
+      <input
+        name="logpass"
+        type="password"
+        required
+        placeholder="Enter Passowrd..."
+      />
+    </label>
+    <button type="submit">Login</button>
+  </form>
+  <div class="otherLinks">
+    <a href="/register">Register</a>
+    <a href="/forget">Forget Password</a>
+  </div>
+</div>
+<%- include('./footer.ejs') %>

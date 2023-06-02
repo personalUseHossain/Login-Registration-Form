@@ -1,0 +1,40 @@
+<%- include('./header.ejs') %>
+<div class="container">
+  <h1>Register</h1>
+  <form action="/register/new" method="post">
+    <label
+      >Username: <br />
+      <input
+        name="regname"
+        type="text"
+        required
+        placeholder="Enter Username..."
+      />
+    </label>
+    <br />
+    <label
+      >Email: <br />
+      <input
+        name="regemail"
+        type="email"
+        required
+        placeholder="Enter Email..."
+      />
+    </label>
+    <br />
+    <label
+      >Password: <br />
+      <input
+        name="regpass"
+        type="password"
+        required
+        placeholder="Enter Passowrd..."
+      />
+    </label>
+    <button type="submit">Register</button>
+  </form>
+  <div class="otherLinks">
+    <a href="/login">Login</a>
+  </div>
+</div>
+<%- include('./footer.ejs') %>
